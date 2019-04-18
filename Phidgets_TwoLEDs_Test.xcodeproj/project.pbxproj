@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E770A00AF23BA5176251647 /* Pods_Phidgets_TwoLEDs_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95C65F5E2CBC2D3A7C0CF1F /* Pods_Phidgets_TwoLEDs_Test.framework */; };
 		E7702BC32267BA3000D9EF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7702BC22267BA3000D9EF61 /* AppDelegate.swift */; };
 		E7702BC52267BA3000D9EF61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7702BC42267BA3000D9EF61 /* ViewController.swift */; };
 		E7702BC82267BA3000D9EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7702BC62267BA3000D9EF61 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14B0AFB7026BCB7CFB8836A6 /* Pods-Phidgets_TwoLEDs_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phidgets_TwoLEDs_Test.release.xcconfig"; path = "Target Support Files/Pods-Phidgets_TwoLEDs_Test/Pods-Phidgets_TwoLEDs_Test.release.xcconfig"; sourceTree = "<group>"; };
+		5CAB9C297C0826462E459708 /* Pods-Phidgets_TwoLEDs_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phidgets_TwoLEDs_Test.debug.xcconfig"; path = "Target Support Files/Pods-Phidgets_TwoLEDs_Test/Pods-Phidgets_TwoLEDs_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		D95C65F5E2CBC2D3A7C0CF1F /* Pods_Phidgets_TwoLEDs_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phidgets_TwoLEDs_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7702BBF2267BA3000D9EF61 /* Phidgets_TwoLEDs_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phidgets_TwoLEDs_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7702BC22267BA3000D9EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7702BC42267BA3000D9EF61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E770A00AF23BA5176251647 /* Pods_Phidgets_TwoLEDs_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D385EA35AFF5B2F90659BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CAB9C297C0826462E459708 /* Pods-Phidgets_TwoLEDs_Test.debug.xcconfig */,
+				14B0AFB7026BCB7CFB8836A6 /* Pods-Phidgets_TwoLEDs_Test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71ECF85CDC67F34167E60B84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95C65F5E2CBC2D3A7C0CF1F /* Pods_Phidgets_TwoLEDs_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7702BB62267BA3000D9EF61 = {
 			isa = PBXGroup;
 			children = (
 				E7702BC12267BA3000D9EF61 /* Phidgets_TwoLEDs_Test */,
 				E7702BC02267BA3000D9EF61 /* Products */,
+				00D385EA35AFF5B2F90659BC /* Pods */,
+				71ECF85CDC67F34167E60B84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7702BD12267BA3100D9EF61 /* Build configuration list for PBXNativeTarget "Phidgets_TwoLEDs_Test" */;
 			buildPhases = (
+				4B08A8B5740CDC4BACC35C52 /* [CP] Check Pods Manifest.lock */,
 				E7702BBB2267BA3000D9EF61 /* Sources */,
 				E7702BBC2267BA3000D9EF61 /* Frameworks */,
 				E7702BBD2267BA3000D9EF61 /* Resources */,
+				410B1A5AE6E30D9C54C38990 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		410B1A5AE6E30D9C54C38990 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Phidgets_TwoLEDs_Test/Pods-Phidgets_TwoLEDs_Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Phidget22Swift/Phidget22Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Phidget22Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Phidgets_TwoLEDs_Test/Pods-Phidgets_TwoLEDs_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B08A8B5740CDC4BACC35C52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Phidgets_TwoLEDs_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7702BBB2267BA3000D9EF61 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		E7702BD22267BA3100D9EF61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CAB9C297C0826462E459708 /* Pods-Phidgets_TwoLEDs_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +372,7 @@
 		};
 		E7702BD32267BA3100D9EF61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B0AFB7026BCB7CFB8836A6 /* Pods-Phidgets_TwoLEDs_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
